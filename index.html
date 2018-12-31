@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Product Listing Template Pattern</title>
+	<style type="text/css">
+.listing {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  font-size: 1.25em;
+  padding-left: 0;
+}
+
+li {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-top: 0;
+  line-height: 2em;
+  background: skyblue;
+}
+
+li p, li a {
+  padding: 10px;
+}
+
+.cta {
+ 
+  bottom: 0;
+  left: 20%;
+  border-top: 1px solid black;
+  margin-top: auto;
+  text-align: center;
+}
+
+.cta a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+  line-height: 3em;
+}
+
+	</style>
+</head>
+<body>
+<ul class = "listing">
+  <li class = "item">
+    <div class="content"><h3>Listing 1</h3><p>Listing Info Goes Here</p></div>
+    <div class="cta"><a href="#">Call To Action</a></div>
+  </li>
+  <li class = "item">
+    <div class="content"><h3>Listing 2</h3><p>Listing Info Goes Here</p></div>
+    <div class="cta"><a href="#">Call To Action</a></div>
+  </li>
+   <li class = "item">
+    <div class="content"><h3>Listing 3</h3><p>Listing Info Goes Here</p> </div>
+    <div class="cta"><a href="#">Call To Action</a></div>
+  </li>
+   <li class = "item">
+    <div class="content"><h3>Listing 4</h3><p>Listing Info Goes Here</p><p>This one has more info</p><p>Than the others</p></div>
+    <div class="cta"><a href="#">Call To Action</a></div>
+  </li>
+   <li class = "item">
+    <div class="content"><h3>Listing 5</h3><p>Listing Info Goes Here</p></div>
+    <div class="cta"><a href="#">Call To Action</a></div>
+  </li>
+</ul>
+</body>
+</html>
